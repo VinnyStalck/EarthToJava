@@ -15,12 +15,13 @@ public class EarthToJava implements ModInitializer {
         //Registry
         //  Items
         Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby"), EarthItems.RUBY);
+        Registry.register(Registry.ITEM, new Identifier("earthtojava", "horn"), EarthItems.HORN);
         //  Blocks
-        Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_block"), EarthBlocks.RUBY_BLOCK);
         Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_ore"), EarthBlocks.RUBY_ORE);
+        Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_block"), EarthBlocks.RUBY_BLOCK);
         //  BlockItems
-        Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_block"), EarthItems.RUBY_BLOCK);
         Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_ore"), EarthItems.RUBY_ORE);
+        Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_block"), EarthItems.RUBY_BLOCK);
 
         // WorldGen
         //   Ore Generation
