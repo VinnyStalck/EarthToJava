@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:smelting",
+    "ingredient": {
+        "item": "earthtojava:ruby_ore"
+    },
+    "result": "earthtojava:ruby",
+    "experience": 1.0,
+    "cookingtime": 200
+}
