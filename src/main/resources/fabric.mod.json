@@ -1,29 +1,28 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "earthtojava",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Earth to Java",
+  "description": "Minecraft Earth features now in Minecraft Java Edition",
   "authors": [
-    "Me!"
+    "VinnyStalck"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/VinnyStalck/EarthToJava",
+    "sources": "https://github.com/VinnyStalck/EarthToJava"
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/earthtojava/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "baunilla.earthtojava.EarthToJava"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {

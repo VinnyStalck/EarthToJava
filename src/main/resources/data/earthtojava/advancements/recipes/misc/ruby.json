@@ -1,0 +1,30 @@
+{
+    "parent": "minecraft:recipes/root",
+    "rewards": {
+        "recipes": [
+            "earthtojava:ruby"
+        ]
+    },
+    "criteria": {
+        "has_ruby_block": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [{
+                    "item": "earthtojava:ruby_block"
+                }]
+            }
+        },
+        "has_the_recipe": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "earthtojava:ruby"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "has_ruby_block",
+            "has_the_recipe"
+        ]
+    ]
+}

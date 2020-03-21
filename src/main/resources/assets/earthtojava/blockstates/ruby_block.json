@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "earthtojava:block/ruby_block"
+        }
+    }
+}
