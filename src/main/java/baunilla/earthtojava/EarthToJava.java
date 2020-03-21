@@ -19,14 +19,16 @@ public class EarthToJava implements ModInitializer {
         //  Blocks
         Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_ore"), EarthBlocks.RUBY_ORE);
         Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_block"), EarthBlocks.RUBY_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier("earthtojava", "buttercup"), EarthBlocks.BUTTERCUP);
         //  BlockItems
         Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_ore"), EarthItems.RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_block"), EarthItems.RUBY_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier("earthtojava", "buttercup"), EarthItems.BUTTERCUP);
 
         // WorldGen
         //   Ore Generation
         Registry.BIOME.forEach(OreGen::generateOre);
         RegistryEntryAddedCallback.event(Registry.BIOME).register((i, identifier, biome) -> OreGen.generateOre(biome));
-        
     }
+
 }

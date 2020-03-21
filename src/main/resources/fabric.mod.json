@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "baunilla.earthtojava.EarthToJava"
+    ],
+    "client": [
+      "baunilla.earthtojava.client.EarthToJavaClient"
     ]
   },
   "mixins": [

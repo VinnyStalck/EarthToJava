@@ -14,4 +14,6 @@ public class EarthItems {
     // Block Items
     public static final BlockItem RUBY_ORE= new BlockItem(EarthBlocks.RUBY_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON));
     public static final BlockItem RUBY_BLOCK= new BlockItem(EarthBlocks.RUBY_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON));
+    
+    public static final BlockItem BUTTERCUP= new BlockItem(EarthBlocks.BUTTERCUP, new Item.Settings().group(ItemGroup.DECORATIONS));
 }

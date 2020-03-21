@@ -1,6 +1,7 @@
 {
     "parent": "block/cross",
     "textures": {
+        "particle": "earthtojava:block/buttercup",
         "cross": "earthtojava:block/buttercup"
     }
 }
