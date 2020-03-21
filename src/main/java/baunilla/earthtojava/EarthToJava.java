@@ -10,20 +10,22 @@ import net.minecraft.util.registry.Registry;
 
 public class EarthToJava implements ModInitializer {
     
+    private static final String MOD_ID = "earthtojava";
+
     @Override
     public void onInitialize() {
         //Registry
         //  Items
-        Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby"), EarthItems.RUBY);
-        Registry.register(Registry.ITEM, new Identifier("earthtojava", "horn"), EarthItems.HORN);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby"), EarthItems.RUBY);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "horn"), EarthItems.HORN);
         //  Blocks
-        Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_ore"), EarthBlocks.RUBY_ORE);
-        Registry.register(Registry.BLOCK, new Identifier("earthtojava", "ruby_block"), EarthBlocks.RUBY_BLOCK);
-        Registry.register(Registry.BLOCK, new Identifier("earthtojava", "buttercup"), EarthBlocks.BUTTERCUP);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ruby_ore"), EarthBlocks.RUBY_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ruby_block"), EarthBlocks.RUBY_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "buttercup"), EarthBlocks.BUTTERCUP);
         //  BlockItems
-        Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_ore"), EarthItems.RUBY_ORE);
-        Registry.register(Registry.ITEM, new Identifier("earthtojava", "ruby_block"), EarthItems.RUBY_BLOCK);
-        Registry.register(Registry.ITEM, new Identifier("earthtojava", "buttercup"), EarthItems.BUTTERCUP);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_ore"), EarthItems.RUBY_ORE);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_block"), EarthItems.RUBY_BLOCK);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "buttercup"), EarthItems.BUTTERCUP);
 
         // WorldGen
         //   Ore Generation
