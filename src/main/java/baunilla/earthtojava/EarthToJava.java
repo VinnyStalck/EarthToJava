@@ -1,6 +1,7 @@
 package baunilla.earthtojava;
 
 import baunilla.earthtojava.common.EarthBlocks;
+import baunilla.earthtojava.common.EarthFluids;
 import baunilla.earthtojava.common.EarthItems;
 import baunilla.earthtojava.world.OreGen;
 import net.fabricmc.api.ModInitializer;
@@ -15,9 +16,14 @@ public class EarthToJava implements ModInitializer {
     @Override
     public void onInitialize() {
         //Registry
+        // Fluids
+        Registry.register(Registry.FLUID, new Identifier(MOD_ID, "mud"), EarthFluids.STILL_MUD);
+        Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_mud"), EarthFluids.FLOWING_MUD);
+
         //  Items
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby"), EarthItems.RUBY);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "horn"), EarthItems.HORN);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mud_bucket"), EarthItems.MUD_BUCKET);
         //  Blocks
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ruby_ore"), EarthBlocks.RUBY_ORE);
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ruby_block"), EarthBlocks.RUBY_BLOCK);
@@ -25,6 +31,7 @@ public class EarthToJava implements ModInitializer {
         //  BlockItems
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_ore"), EarthItems.RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_block"), EarthItems.RUBY_BLOCK);
+
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "buttercup"), EarthItems.BUTTERCUP);
 
         // WorldGen
