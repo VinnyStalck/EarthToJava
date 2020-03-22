@@ -35,5 +35,10 @@
   },
   "suggests": {
     "flamingo": "*"
+  },
+
+  "custom": {
+    "modsoftheworld:logo": "earthtojava:logo.png",
+    "modsoftheworld:splashes": "modid:texts/splashes.txt"
   }
 }
