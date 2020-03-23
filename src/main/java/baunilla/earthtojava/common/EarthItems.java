@@ -5,6 +5,7 @@ import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
+import net.minecraft.item.SpawnEggItem;
 import net.minecraft.util.Rarity;
 
 public class EarthItems {
@@ -15,6 +16,9 @@ public class EarthItems {
 
     // Bucket
     public static final Item MUD_BUCKET = new BucketItem(EarthFluids.STILL_MUD, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1).group(ItemGroup.MISC));
+
+    // Spawn Eggs
+    public static final SpawnEggItem MUDDY_PIG_SPAWN_EGG = new SpawnEggItem(EarthEntities.MUDDY_PIG, 0xEBA3A4, 0x523724, new Item.Settings().group(ItemGroup.MISC));
 
     // Block Items
     public static final BlockItem RUBY_ORE = new BlockItem(EarthBlocks.RUBY_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS).rarity(Rarity.UNCOMMON));

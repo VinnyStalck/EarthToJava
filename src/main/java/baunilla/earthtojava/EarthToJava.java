@@ -1,6 +1,7 @@
 package baunilla.earthtojava;
 
 import baunilla.earthtojava.common.EarthBlocks;
+import baunilla.earthtojava.common.EarthEntities;
 import baunilla.earthtojava.common.EarthFluids;
 import baunilla.earthtojava.common.EarthItems;
 import baunilla.earthtojava.world.OreGen;
@@ -24,6 +25,8 @@ public class EarthToJava implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby"), EarthItems.RUBY);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "horn"), EarthItems.HORN);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "mud_bucket"), EarthItems.MUD_BUCKET);
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, "muddy_pig_spawn_egg"), EarthItems.MUDDY_PIG_SPAWN_EGG);
+
         //  Blocks
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ruby_ore"), EarthBlocks.RUBY_ORE);
         Registry.register(Registry.BLOCK, new Identifier(MOD_ID, "ruby_block"), EarthBlocks.RUBY_BLOCK);
@@ -33,6 +36,9 @@ public class EarthToJava implements ModInitializer {
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_block"), EarthItems.RUBY_BLOCK);
 
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "buttercup"), EarthItems.BUTTERCUP);
+
+        // Entities
+        Registry.register(Registry.ENTITY_TYPE, new Identifier(MOD_ID, "muddy_pig"), EarthEntities.MUDDY_PIG);
 
         // WorldGen
         //   Ore Generation
