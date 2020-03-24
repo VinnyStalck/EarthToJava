@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {"item": "minecraft:bucket"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"},
+        {"item": "minecraft:dirt"}
+    ],
+    "result": {
+        "item": "earthtojava:mud_bucket"
+    }
+}
