@@ -1,7 +1,7 @@
 package baunilla.earthtojava.common;
 
 import net.fabricmc.fabric.api.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tools.FabricToolTags;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.FluidBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;

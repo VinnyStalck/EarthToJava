@@ -42,7 +42,7 @@ public class Mud extends BaseFluid {
     }    
     
     @Override
-    protected int method_15733(WorldView worldView) {
+    protected int getFlowSpeed(WorldView worldView) {
         return 1;
     }    
     
