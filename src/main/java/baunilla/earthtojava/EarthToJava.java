@@ -17,7 +17,7 @@ public class EarthToJava implements ModInitializer {
     @Override
     public void onInitialize() {
         //Registry
-        // Fluids
+        //  Fluids
         Registry.register(Registry.FLUID, new Identifier(MOD_ID, "mud"), EarthFluids.STILL_MUD);
         Registry.register(Registry.FLUID, new Identifier(MOD_ID, "flowing_mud"), EarthFluids.FLOWING_MUD);
 
@@ -34,14 +34,13 @@ public class EarthToJava implements ModInitializer {
         //  BlockItems
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_ore"), EarthItems.RUBY_ORE);
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "ruby_block"), EarthItems.RUBY_BLOCK);
-
         Registry.register(Registry.ITEM, new Identifier(MOD_ID, "buttercup"), EarthItems.BUTTERCUP);
 
-        // Entities
+        //  Entities
         Registry.register(Registry.ENTITY_TYPE, new Identifier(MOD_ID, "muddy_pig"), EarthEntities.MUDDY_PIG);
 
-        // WorldGen
-        //   Ore Generation
+        //  WorldGen
+        //    Ore Generation
         Registry.BIOME.forEach(OreGen::generateOre);
         RegistryEntryAddedCallback.event(Registry.BIOME).register((i, identifier, biome) -> OreGen.generateOre(biome));
     }
